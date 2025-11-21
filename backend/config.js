@@ -1,0 +1,13 @@
+import express from "express"
+import cors from "cors"
+import 'dotenv/config'
+import connectDB from "./config/mongodb.js"
+import connectCloudinary from "./config/cloudinary.js"
+import adminRouter from "./routes/adminRoute.js"
+import tutorRouter from "./routes/tutorRoute.js"
+import userRouter from "./routes/userRoute.js"
+import http from "http"
+import { Server } from "socket.io"
+import MessageModel from "./models/messageModel.js"
+import chatRouter from "./routes/chatRoute.js"
+import jwt from "jsonwebtoken"     
